@@ -1,3 +1,3 @@
-### Per visionare il progetto completo
+### Corso Reactjs con esercizi svolti
+Teoria + pratica
 
-Link al progetto completo: https://appuntamenti-app.netlify.app/
