@@ -1,4 +1,4 @@
-import Inizio from "./Hooks/2-useEffect/1-useEffect-basi";
+import Inizio from "./Hooks/3-render-condizionale/2-render-short-circuit";
 
 function App() {
   return (
