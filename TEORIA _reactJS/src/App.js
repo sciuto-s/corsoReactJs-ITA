@@ -1,4 +1,4 @@
-import Inizio from "./Hooks/3-render-condizionale/2-render-short-circuit";
+import Inizio from "./Hooks/3-render-condizionale/3-show-hide";
 
 function App() {
   return (
