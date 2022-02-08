@@ -33,14 +33,13 @@ const ControlledInput = () => {
     // console.log(e.target.value);
     const { name, value } = e.target;
     console.log(e.target);
-    //ES6
+    //ES6 PER AGGIUNGERE ALL'ARRAY
     setUser({ ...user, [name]: value });
   };
-  /* useEffect(() => {
-    // console.log(new Date(Date.now()).getTime().toString());
+  useEffect(() => {
     const { log } = console;
     log(users);
-  }, [users]); */
+  }, [users]);
 
   return (
     //posso inserire la funzione su tutto il form o solo sul bottone
