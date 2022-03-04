@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "../../../data";
+import { data } from "../../data";
 
 const MainComponent = () => {
   /**
@@ -8,9 +8,9 @@ const MainComponent = () => {
   const [people, setPeople] = useState(data);
 
   /**
-   * Rimuove Elementi dallo state e lo aggiorna
    * @param {Number} id
    * @returns {undefined}
+   * Rimuove Elementi dallo state e lo aggiorna
    */
   const removePeople = (id) => setPeople(people.filter((el) => el.id !== id));
   return (
@@ -33,7 +33,7 @@ const Elenco = ({ people, removePeople }) => {
 
 const Persona = ({ id, name, removePeople }) => {
   return (
-    <div className="item">
+    <div className="item shadow">
       <h5> {name} </h5>
       <button className="button delete-button" onClick={() => removePeople(id)}>
         {" "}

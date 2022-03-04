@@ -50,6 +50,7 @@ const Holiday = () => {
     try {
       const response = await axios.get(url);
       setData(response.data);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
@@ -60,6 +61,7 @@ const Holiday = () => {
 
   //Return Condizionale per controllare di aver risolto la Promise
   if (data.success) {
+    console.log(data);
     return (
       <>
         {data.data.length > 0 ? (

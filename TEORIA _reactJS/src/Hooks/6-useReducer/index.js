@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import Modal from "./Modal";
 import reducer from "./reducer";
 import { APRO_MODAL, CHIUDI_MODAL } from "./actions";
+
 const initialState = {
   isModalOpen: false,
   modalContent: "Eccomi sono un modal",
@@ -26,7 +27,7 @@ const Index = () => {
   //-- PER PASSARE IL REDUCER
 
   const apriModal = () => {
-    dispatch({ type: APRO_MODAL, payload: "il mio nuovo modal" });
+    dispatch({ type: APRO_MODAL, payload: "il nuovo modal" });
   };
   const chiudiModal = () => {
     dispatch({ type: CHIUDI_MODAL });
